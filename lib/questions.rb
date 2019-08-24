@@ -5,6 +5,12 @@ end
 
 # keep only the elements that start with a vowel
 def select_elements_starting_with_vowel(array)
+  vowels = %w[ a e i o u ]
+  arr = array.reject do |element|
+    first_char = element.to_s.downcase.chars.first
+    !vowels.include? first_char
+  end
+  return arr
 end
 
 # remove instances of nil (but NOT false) from an array

@@ -12,11 +12,11 @@ describe 'Ruby Refresher' do
     n = select_elements_starting_with_a ['bananas', 'apples', 'pears', 'avocados']
     expect(n).to eq ['apples', 'avocados']
   end
-  #
-  # it 'select_elements_starting_with_vowel' do
-  #   n = select_elements_starting_with_vowel ['john', 'david', 'omar', 'fred', 'idris', 'angela']
-  #   expect(n).to eq ['omar', 'idris', 'angela']
-  # end
+  
+  it 'select_elements_starting_with_vowel' do
+    n = select_elements_starting_with_vowel ['john', 'david', 'omar', 'fred', 'idris', 'angela']
+    expect(n).to eq ['omar', 'idris', 'angela']
+  end
   #
   # it 'remove_nils_from_array' do
   #   n = remove_nils_from_array ['a', 'b', nil, nil, false, 'c', nil]
